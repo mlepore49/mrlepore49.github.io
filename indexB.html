@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://www.ldeo.columbia.edu/~clepore//research/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tornado Climatology</title>
+  <meta name="description" content="Climatology">
+
+  <link rel="stylesheet" href="./css_files/main.css">
+<style type="text/css"></style></head>
+
+
+  <body data-pinterest-extension-installed="cr1.39.1">
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="http://www.ldeo.columbia.edu/~clepore//">Severe Weather Analysis</a>
+
+    <nav class="site-nav">
+      <a href="http://www.ldeo.columbia.edu/~clepore//research/#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+        </svg>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="http://www.ldeo.columbia.edu/~clepore//private/index.html">LogIn</a>
+          <a class="page-link" href="http://www.ldeo.columbia.edu/~clepore//">Home</a>
+          <a class="page-link" href="http://www.ldeo.columbia.edu/~clepore//publications/">Publications</a>
+          <a class="page-link" href="./Research_files/Research.html">Research</a>
+          <a class="page-link" href="http://www.ldeo.columbia.edu/~clepore//private/rymjc.html">LogIn2</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Research</h1>
+  </header>
+
+  <article class="post-content">
+    <h1 id="menu">Extremes and State of the Atmosphere</h1>
+
+<p><a href="http://www.ldeo.columbia.edu/~clepore//research/#headerGRL">Temperature and CAPE Dependence of Rainfall Extremes in the Eastern United States (GRL work)</a>  </p>
+
+<h1 id="headerGRL">GRL Paper Summary <a href="http://www.ldeo.columbia.edu/~clepore//research/#menu"><span style="font-size:10pt;">Back to Menu</span></a></h1>
+
+<p><strong>Data</strong><br>
+<span style="color:#0066CC"><strong>National Climatic Data Center (NCDC)</strong></span><br>
+<strong>Hourly precipitation time series</strong> - 270 station from the 6000 the National Climatic Data Center (NCDC). These data have no long data gaps, very few missing values, and they are free of hourly estimates from disaggregated daily totals. The starting date varies (~1950 at the earliest), and overlap the ERA records (1979). 182 are in the EUS region we study. [270 Colored dots in <a href="http://www.ldeo.columbia.edu/~clepore//research/#Figure1">Figure 1</a>]</p>
+
+<p><span style="color:#0066CC"><strong>ERA Interim - ECMWF</strong></span><br>
+Data span the period 1979-2008 and were bi-linearly interpolated to a spatial resolution of 0.125 from the original grid (ECMWF, 2013). Daily time series of T and CAPE for the NCDC stations shown in Figure 1 were taken from the closest interpolated reanalysis cell.<br>
+<strong>Mean daily air temperatures T</strong> - Data were extracted from the sub-daily screen level (2 m) temperatures of ERA-Interim.<br>
+<strong>Mean daily convective available potential energy</strong> - CAPE were derived from the ERA 12-hour predicted fields (we also looked at daily maximum, obtained as the max of the 12-hour predicted fields, obtaining similar results).</p>
+
+<p><span style="color:#0066CC"><strong>NCDC Integrated Global Radiosonde Archive  (IGRA)</strong></span><br>
+The radiosonde stations are matched to the nearest NCDC gauge station and grouped by sub-region in analogy with the other variables. [49 black circles in <a href="http://www.ldeo.columbia.edu/~clepore//research/#Figure1">Figure 1</a>]<br>
+<strong>Mean daily Dewpoint Temperature Td</strong> - From the NCDC IGRA (Durre et al., 2006) from bi-daily radio-soundings (00 and 12UTC) at the m.s.l.<br>
+<strong>Bi-daily CAPE from soundings</strong> - For completeness, we also consider CAPE values from soundings (data and documentation available <a href="http://www.ncdc.noaa.gov/oa/climate/igra/">here</a>).  </p>
+
+<h1 id="methods">Methods</h1>
+
+<p>Rainfall Intensity, I, and Temperature, T, data are matched and binned into 2-deg temperature intervals 0-2, 2-4,..<sup>o</sup>C.<br>
+We extracted precipitation quantiles for several non-exceedance probabilities <em>p</em>, resulting in a matrix of intensities I<sub>p</sub>,T.<br>
+The dependence of rainfall intensity on T is displayed through quantile plots, which are plots of I<sub>p,T</sub> against T for different p.<br>
+Through regression of lnI<sub>p,T</sub>  vs. T, we infer, for each p, different measures of sensitivity of I<sub>p</sub> to T: the overall slope S<sub>p</sub> based on all temperature bins, the average slope S<sub>p,[T1-T2]</sub> within a selected range of temperatures [T1-T2] , and the local slope S<sub>p,T</sub>.</p>
+
+<h1 id="Figure1">Figure 1</h1>
+<p><img src="./Research_files/figure1_agu2014.png" alt="Figure 1"><br>
+Slope map for the lnI-T 99th percentile for the 270 CONUS NCDC stations (colored circles); the black circles are the location of the sounding stations.<br>
+These slopes have been obtained using Gauge precipitation and ERA Surface Temperature.<br>
+The EUS values are mostly CC or slightly higher than a CC slope. The rest of the US is very variable, with slopes mostly below CC rate. The rest of the analysis are focused on the EUS of the CONUS, divided in 4 regions: North, Central, South, East. Note the low slope for the West Coast. Note the very low values for the West coast and the “salt and pepper” variability in the Rockies.  </p>
+
+<h1 id="Figure2">Figure 2</h1>
+<p><img src="./Research_files/figure2_agu2014.png" alt="Figure 2"><br>
+Slope values for the lnI<sub>p</sub>-T regressions, for various percentiles for the 4 macro regions presented in Fig. 1. These slopes are calculated for a temperature range <strong>9-22 C only</strong>. In this range we observe no inflection (see <a href="http://www.ldeo.columbia.edu/~clepore//research/#Figure3">Fig. 3</a>).
+The overall regional slopes increase with the percentile levels and they reach values that are 150% CC-slope, but don’t get higher.</p>
+
+<p><strong>NOTE:</strong> from Figure 3 on, we used only the sounding data, both for T and T<sub>d</sub>. We repeated Fig. 1 analysis using T from sounding, rather than ERA data, and the results were similar. The difference we have found were most likely to: 1) going from ERA data to sounding data we lost a lot of stations (approx. going from 182 to 50 stations), 2) sounding are at a very local scale compared to ERA data. However, the results were surprisingly similar, showing how the temperature is a very robust regressor for precipitation, <em>I</em>, and that it is well modeled in ERA interim.  </p>
+
+<h1 id="Figure3">Figure 3</h1>
+<p><img src="./Research_files/figure3_agu2014.png" alt="Figure 3"> <br>
+Quantile (lnI<sub>p</sub>) and slope (S<sub>p</sub>) plots for the 4 sub-regions for different probabilities levels, p = 0.75, 0.9, 0.99, and 0.999. The dotted vertical lines mark the 9-22C range, the black-dashed lines (1st and 3rd column) and red dashed lines (2nd and 4th column) show the CC rate (~0.068).<br>
+The first two columns are for the all-year analysis. The last two columns are for winter (DJF, colored lines) and summer (JJA, black lines). Results for the spring and fall seasons are close to the all-year results and are omitted.
+Most of the super-CC slopes are within the 9-22 range, but even the maximum local slopes remain below 1.5CC except for isolated cases. The slopes for the whole year have a local minimum around 8-10oC.<br>
+The S<sub>p</sub> plots for the winter (after the initial local minimum) and the summer have a “parabolic” shape. The “zeros” of the parabola, i.e. at about T=10 and 25 oC in the North during summer, correspond to local minima and maxima of the lnI<sub>p</sub> plots. The parabolic shape of the S<sub>p</sub> curves corresponds to an “S” shape of the lnI<sub>p</sub> plots. The peak of the parabola tends to decrease as p increases.  </p>
+
+<h1 id="Figure4">Figure 4</h1>
+<p><img src="./Research_files/figure4_agu2014.png" alt="Figure 4"><br>
+(top row) Variation of average storm duration D (hr) with temperature T for (i) all year, (ii) DJF, (iii) JJA , (iv) SON (solid) and MAM (dashed); (bottom row) Quantile and slope plots for 2 averaging durations: 2hr (colored) and 8 hr (black) within storms (Columns 1 and 2), using block averaging (Columns 3 and 4), and for daily average values (last two columns).
+The storm duration is inversely proportional to rainfall intensity (shorter events are more intense). The grey shading reproduces <a href="http://www.ldeo.columbia.edu/~clepore//research/#Figure3">Figure 3</a>. The storms are identified using a fractal method (Veneziano and Lepore, 2012). Through this method, we reduce dry periods, especially inside longer storms and the averaging duration doesn’t affect the shape of lnI<sub>p</sub>. When using block averaging the inclusion of dry periods reduces the intensities values, which are much lower than those for 1hr (grey lines). This is especially evident for d = 8 e daily averages.</p>
+
+<h1 id="figure-5">Figure 5</h1>
+<p><img src="./Research_files/figure5_agu2014.png" alt="Figure 5"><br>
+(a) T<sub>d</sub>-T and  lnI-T<sub>d</sub> quantile plots for all-year (first and second columns) and DJF and JJA superposed (colored and black lines, respectively, third and fourth columns). (b) lnI-lnCAPE plots for all-year (first column) and DJF+JJA (second column). The third column shows lnCAPE-T<sub>d</sub> quantiles and last column shows lnI-T<sub>d</sub> relationships for different CAPE classes.<br>
+T<sub>d</sub>-T is a 1:1 relationship up to 22-25C. lnI-T<sub>d</sub> regressions result in a less peak-shaped relationships compared to <a href="http://www.ldeo.columbia.edu/~clepore//research/#Figure3">Figure 3</a>, but some curvature persists. lnI-lnCAPE is a very regular regression, with slope values all below 0.5. lnI-T<sub>d</sub> for different CAPE classes results in a decreasing slope value as CAPE increases, suggesting a different role of the potential energy for different CAPE ranges.</p>
+
+<h1 id="figure-6">Figure 6</h1>
+<p><img src="./Research_files/figure6_agu2014.png" alt="Figure 6"><br>
+We considered the following equations:   </p>
+
+<ul>
+  <li>lnI<sub>p</sub> = c + aT<sub>d</sub> + blnCAPE    (1)</li>
+  <li>lnCAPE = d*T   (2)</li>
+  <li>g = a/(a+d*b)    (3)  </li>
+</ul>
+
+<p>The first row shows the slope coefficients of simple lnI-T<sub>d</sub>, lnI-lnCAPE and lnCAPE-T regressions; in the second row we show the coefficients for multiple regression (Eq. 1), and g (Eq. 3) The third row repeats the analysis using sounding data.<br>
+In the second row, the values are highly consistent across regions and vary from about 0.5 for p=0.75 (equal contribution from water vapor content and the intensity of convection) to about 0.8 for p = 0.99 (predominance of water vapor variation). When we consider sounding data, the main effect is a decrease in the lnI<sub>p</sub>-lnCAPE slope and an increase of g towards 1, with a weaker dependence of rainfall on CAPE.</p>
+
+<p>** Published in</p>
+
+<p>C. Lepore, D. Veneziano, A. Molini (2014), Temperature and CAPE Dependence of Rainfall Extremes in the Eastern United States, Geophysical Research Letters, <a href="http://onlinelibrary.wiley.com/doi/10.1002/2014GL062247/full">doi: 10.1002/2014GL062247</a>. <a href="http://www.ldeo.columbia.edu/~clepore//publications_pdf/grl52319.pdf">PDF</a> </p>
+
+<p>C. Lepore, D. Veneziano, A. Molini, (2014), Temperature and CAPE Dependence of Rainfall Extremes in the Eastern United States, American Geophysical Union, Fall Meeting 2014 <a href="http://www.ldeo.columbia.edu/~clepore//publications_pdf/poster_AGU_2014_LEPORE_GC51A-0378.pdf">POSTER</a></p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+   <!-- <h2 class="footer-heading">Chiara Lepore</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Chiara Lepore</li>
+          <li><a href="mailto:clepore at ldeo.columbia.edu">clepore at ldeo.columbia.edu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+
+          <li>
+            <a href="https://github.com/chiaral">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"></path>
+                </svg>
+              </span>
+
+              <span class="username">chiaral</span>
+            </a>
+          </li>
+
+
+
+          <li>
+            <a href="https://twitter.com/lapiccolaflo">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"></path>
+                </svg>
+              </span>
+
+              <span class="username">lapiccolaflo</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Extremes in Hydrology
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+<span style="height: 20px; width: 40px; position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAHjElEQVR4Ae1bBXAbvRLO0GNmpv+VmflnZmZmZi4zMzMzM4Y58ZwTz4SZnZzpjLWzBa38Zs8aO332pdy7ma9JPmml1XfSaqXacfgYjRIcPrwP9u7dqSMKHDq0D5hmiLi4vDwJEH6/H86dOxcFdAQCfq5ZQUEexOHM8/l8cPbsWR0xADVD7eJwSuqCaANqpwt4MQTU9uiPLuDFErC1tVUDdFw0AV0l5VA1dS4Y7n4SUv7VD+J/0QHif3YT/1168Dmonb8MfBbr9StgIBDQBE9DE+Q//zYX69QP/3NBJP6pO1TPXgwBvx9trwu0S0BblgFSOwwigRJ+1xnyn3wVqqfNh6aVG6Fu7mIofudzSL1poCCk6aX3wO/1XV8C4ikkFjgKSiD5b71IlIIX3oHTbDayR5ji/GEdVU+dK8zS0m8mYDvXPLQJyDLw7CH3khjlTAx8LmSDYtbOXEg28b/sAPb8Qir3ebxg3ncY5MTUiz5Ir80BTTv2UX+R4KyownraBcRjSbRo3LaHhDDc8Ri0BgKcd5lboOTL0ZDPZqOclBpmh/XSuwwj2+IPv+a81+2B3DsfI75+/VbkLwpczTKkdx+B7fKNzSblCeVl42dA8j/78PLaZWtjbl+TgManXqPBWk4mBXmvF7KH3U98CnOKCRNmW/zul1QnvdfNnDMfPkEcomzklIsmYOWMBULbTdv3Ik8+J/+9N5UpRSXaBfR6vVEj5d99sUMeA/3/4xp3H0ROgFJbF2ZbMW66uun8thPnbAaJ4mMKG5CztAL5i4LGDduov6w+t4FPUahMzjJQWep/B6EgMbdPAno8nqhx6sfBTrMH3k1c6feTwlIW1kGYbdk3E9U4+PMOyPF69uQMqF+8Gk43y2R3MYBxSt5zCJpWb4ZWl1AmzM6CF9/V0r42AZP/3CP4RgfcRVzozEIYH3kxom3Bqx+qb/3f/ThXtXAlSI+9xPAytJxIpLp2FtilJ14F6dGXoPCT78AqmcDI4mtqx8Ec+S+/D0pdwwV9Lfl6QrDtJ14BW1Ep5/JZGpVz+6NsJfUnX9I6D+WcxMKTJgHdbnfUyBn+QHAJ/rojOOobOGfef0QQsHbBioi2Wf3vFDYgxqHzxDEBqW7l3MWq2DcNYEu+c1iYMDz0XJt+Kk1mnOU0251sk7MyEck+AnKDPkULbQJWz1LTEdNbn3FOzsolDpe4s7I6zM5aXAanfqrmgpVs1lpNheqy/2M38DjV+sYnXxUHd/ODUP7VeBbLbicOd9a2/KzbskuwRc7O/Cr7gmUKT71OZXjcLPt8JIclMUWbgE6nM2p4HQ4ekPlO2n045yoox2Nct+HYeJid6d0vQuLff3nuVTl/GXHSwy+o9RVFSNSL3vqMck1bcoa6Ef2+c5t+Fryj9lf+7STOoV/YRtWUuVRW+PrHyCFwWcakBQmoKEpM8LHlYHrmDXSM/y09qaY2mBo4mmWhfgNb4vE/+68QtNEBSZ1lbGYvovpNKapIyX/thUkuldWG7KzZg+9p08eMPreGhgahzHDvU2reuW4LcpqgWUAcfCCYQOPfbBn0FWMTu4FpZstaLiyCEpasJvymkxrP/jOAX0IoDgfmi8RbDRK1XzZ5NvGm594W+i54T51ZpZ+PiuifpbwCQwmd0d0O9QU4rFZI/EMXCjeYbrVbQIfDoRnNBkm4UMD8LkKApnzLXVwanGWpmULizV4KtRk6Q+qWrRX6ywiGDw7zgWMRfapavl59mXc/IZQ1HDlJZRhP0RetY78oAlYuWK7GMTZw64nE0CMbxaoSFgNPt8gkVPm0+VRufPwVag9nT8KvO1CZrbhMLauqoY0Iz9NOiyWiT/mvfED2FSOnCGWYCtFxkvmEXLsFtNvtmmF87i11Z500BwXCKxlQciSQ9x0BR1oWtHr4sQ47JTvp6deF2xniX3qPePYiBJvaXQeoLKPXzW36lNlX3anrWMwkexaLQzOBavbyeRl7EebMnJjHTgJarVbNSOs0hBySU7OQQ1CsxJ+R7LIG3k12Eku8G1nMzHv9I+IQhW98LNhUhOSGiSyhrz8eDzVMVF6uAlMiqpfDLipq2Xm7YulqtBETfnYZ3HAqCQwsiY9ns95skGIae7sFtDQ20hvFkwVuDNHaSvc/g3YC8EysxlC+Qwo2dZt2Ih+G8oUrhXrGR1+KWA83Ddq4RODlL852bQJaLBZNMEt56i0KW4ax2MrH4zE2CsvVcugEJP6e75Bs5+4ItqoawUaxWjEpFs7TRW9+CoosC/W8DCUffsN2224hu39/MG/cCbb4FDyrE48XGHhXiSEm1vG3W8Bmo4kuD5Sa2phscWkHZAvfdFySCeMmcvgf1vj5E/yJbznMLoCpU7YB7EyIQIscceBoh5cSGHudBiO4C0rwZpxCSiuDkmXAfpHHBBvttAsoy7I2VFUHA/WC5dhgrPZoQ5tEDHZYH+3+b59YjnVR0Eg89asR2gVUHaFTBfHXPy6egAhcQtrtdQERuoAtLS06NEAX8GIJaDabdWgAFxA/ptrQUBejsQ7UDLXjHzLPzExjREOUxjpQK9SsoMAIcewf/jWHQ4e0fM1B/5rDebD10oZZukwlAAAAAElFTkSuQmCC&quot;); background-color: transparent; background-size: 40px 20px;"></span></body></html>
